@@ -1,6 +1,7 @@
-import { Schema } from "mongoose";
+import mongoose from "mongoose";
+const Schema = mongoose.Schema
 
-const HouseSchema = new Schema(
+export const HouseSchema = new Schema(
     {
         bedrooms: { type: Number, required: true, min: 0, max: 30 },
         bathrooms: { type: Number, required: true, min: 0, max: 25 },
